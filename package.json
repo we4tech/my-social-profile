@@ -1,0 +1,23 @@
+{
+    "author": "Nhm Tanveer Hossain Khan <hasan83bd@gmail.com> (http://hasan.we4tech.com)"
+  , "name": "my-social-profile"
+  , "description": "My social existence on a single customizable page"
+  , "version": "0.1.0"
+  , "homepage": "https://github.com/we4tech/my-social-profile"
+  , "keywords": ["social", "facebook integrated profile", "linkedin", "social profile"]
+  , "repository": {
+    "type": "git"
+  , "url": "git://github.com/we4tech/my-social-profile.git"
+  }
+  , "engines": {
+    "node": "~0.6.1"
+  }
+  , "dependencies": {
+    "express": "2.5.8"
+  , "sequence": "2.1.1"
+  , "jade": ">= 0.0.1"
+  }
+  , "bin" : {
+    "my-social-profile-start": "./bin/start.js"
+  }
+}
