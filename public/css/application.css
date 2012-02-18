@@ -1,0 +1,75 @@
+.container-fluid > .content {
+  margin-left: 20px;
+}
+#about-mini {
+  background: #f0f0f0;
+  margin-left: -40px;
+  margin-right: -20px;
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+
+#about-mini .dp {
+  width: 200px;
+}
+
+#about-mini .content small {
+  font-size: 130%;
+}
+
+#about-mini .content p {
+  font-size: 120%;
+  color: #888;
+  line-height: 20px;
+}
+
+#about-mini .dp img {
+  width: 200px;
+}
+
+#about-mini #social-connections .btn, #skill-tags .btn {
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+#first .blogs {
+}
+
+#first .streams, #second .xcareers_info {
+  width: auto!important;
+}
+
+.photo-stream ul {
+  list-style-type: none;
+}
+
+.photo-stream ul li {
+  float: left;
+  margin-right: 5px;
+}
+
+#skill-tags {
+  margin-bottom: 10px;
+}
+
+#skill-tags ul {
+  list-style-type: none;
+  margin: 0;
+  font-size: 110%;
+}
+#skill-tags ul li {
+  float: left;
+  background: #f0f0f0;
+  height: 40px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  width: 70px;
+  vertical-align: middle;
+  text-align: center;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.clearfix {
+  clear: both;
+}

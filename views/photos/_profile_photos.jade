@@ -1,0 +1,14 @@
+if profile.photos
+  .span10.streams
+    each photos, source in profile.photos
+      .photo-stream.row
+        ul
+          each photo in photos
+            li
+              a(href= photo.url)
+                img(src= photo.thumb, width='100px')
+      p &nbsp;
+
+else
+  .span10.streams
+    No photos were configured.

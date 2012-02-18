@@ -16,6 +16,7 @@
     "express": "2.5.8"
   , "sequence": "2.1.1"
   , "jade": ">= 0.0.1"
+  , "jasmine-node": "1.0.21"
   }
   , "bin" : {
     "my-social-profile-start": "./bin/start.js"

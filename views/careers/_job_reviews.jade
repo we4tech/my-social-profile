@@ -1,0 +1,11 @@
+if profile.feedbacks && profile.feedbacks.length > 0
+  .span7.reviews
+    h3 Feedback
+    each f in profile.feedbacks
+      blockquote
+        strong
+          a(href= f.author_url) #{f.author} said -
+          p= f.content
+
+else
+  no feedback was added.

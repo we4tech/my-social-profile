@@ -1,2 +1,35 @@
-h1= title
-p Welcome to #{title}
+include profile/_brief
+
+.row
+  p &nbsp;
+
+.row
+  p &nbsp;
+
+#first.row
+  include blogs/_profile_posts
+  include photos/_profile_photos
+
+.row
+  hr
+#second.row
+  .span12
+    h1.offset1 Career Profile
+  br(clear='both')
+  include careers/_info
+
+.row
+  hr
+
+if profile.contact
+  #third.row
+    .span12
+      h1.offset1 Contact Information
+      .well
+        h5= profile.contact.name
+        small Cell: #{profile.contact.cell}
+        a(href='mailto:#{profile.contact.email}', title='Email address') &nbsp; E-Mail,
+        a(href='#{profile.contact.url}', title='Website') &nbsp; URL
+
+
+

@@ -1,0 +1,19 @@
+
+.span7.contrb
+  include _skills
+  .clearfix
+
+  if profile.social_codings
+    h3 Social Coding
+    #accordion
+      each items, type in profile.social_codings
+        div
+          h3
+            a(href="#")= type
+          ul
+            each item in items
+              li
+                a(href= item.url)= item.title
+
+  else
+    No social coding added

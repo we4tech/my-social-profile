@@ -1,0 +1,16 @@
+#about-mini.row
+  .dp.span4
+    img(src=profile.display_picture)
+  .content.span17
+    h1= profile.title
+    small.status
+      strong
+        i= profile.status
+    p &nbsp;
+    p!= profile.description
+
+    if profile.social_connections
+      #social-connections.row.pull-right
+        .offset1
+          each connection in profile.social_connections
+            a.btn.info(href= connection.url)= connection.label

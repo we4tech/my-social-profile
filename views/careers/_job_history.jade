@@ -1,0 +1,19 @@
+if profile.experiences && profile.experiences.length > 0
+  .span7.careers_info
+    .alert-message.block-message.warning
+      h4
+        a(href='#') #{profile.experiences[0].title}, #{profile.experiences[0].company}
+
+    if profile.experiences.length > 1
+      #blog-posts
+        each exp, i in profile.experiences
+          if i > 0
+            .block-message
+              h5
+                a(href='') #{!exp.working ? 'Was ' : ''}#{exp.title}, #{exp.company}
+              if exp.description
+                p= exp.description
+
+else
+  .span7.careers_info
+    No career experience was added.

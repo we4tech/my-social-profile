@@ -1,0 +1,8 @@
+if profile.skills
+  #skill-tags
+    h3 Experts On
+    each skill in profile.skills
+      li.btn.success= skill
+
+else
+  No skill was added.
